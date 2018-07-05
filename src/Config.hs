@@ -117,11 +117,11 @@ makePool Production env = do
     -- give us a @Maybe a@, which would make the code quite a bit more
     -- verbose.
     pool <- runMaybeT $ do
-        let keys = [ "host="
-                   , "port="
-                   , "user="
-                   , "password="
-                   , "dbname="
+        let keys = [ "host=localhost"
+                   , "port=5432"
+                   , "user=analyzer"
+                   , "password=anapass"
+                   , "dbname=aanalyzer"
                    ]
             envs = [ "PGHOST"
                    , "PGPORT"

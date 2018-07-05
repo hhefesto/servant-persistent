@@ -1,5 +1,5 @@
 exec: ../perservant
-host: your.host.name.com
+host: 127.0.0.1
 
 plugins:
     postgres: true
